@@ -100,11 +100,6 @@ const getCalcResult = () => {
     clearLogicValues(result);
 };
 
-const clearCurrentValues = () => {
-    clearLogicValues(0);
-    updateScreen(logic.currNumValue);
-};
-
 const assignEventListeners = () => {
     btnNumber.forEach((element) => {
         element.addEventListener("click", enterNumValue);
